@@ -1,7 +1,7 @@
 FROM python:3.9-slim-bullseye
 
 RUN apt update
-RUN apt install gcc git -y
+RUN apt install gcc git g++ -y
 
 RUN pip install --no-cache-dir cython
 RUN pip install --no-cache-dir cryptofeed
